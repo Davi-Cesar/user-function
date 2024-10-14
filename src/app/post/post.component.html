@@ -1,0 +1,12 @@
+<div class="post-list">
+    <h1>Lista de Posts</h1>
+    <div *ngIf="listPosts.length === 0">
+      <p>Nenhum post disponível.</p>
+    </div>
+    
+    <div *ngFor="let posts of listPosts" class="post">
+      <h2>{{ posts.title }}</h2>  
+      <p>{{ posts.body }}</p> 
+    </div>
+  </div>
+  
